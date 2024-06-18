@@ -1,0 +1,89 @@
+ .containerBox {
+     margin: 10px;
+     width: 300px;
+     background: #FDE58A;
+     padding: 20px;
+     height: 250px;
+     display: flex;
+     flex-direction: column;
+     border-radius: 10px;
+     font-weight: 700;
+     text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.5);
+     font-size: 18px;
+     letter-spacing: 1px;
+     cursor: pointer;
+     transition: box-shadow 0.5s ease-in-out;
+
+ }
+
+ .containerBox:hover {
+     box-shadow: 0px 0px 10px rgb(125, 125, 125);
+ }
+
+ .btn {
+     width: 100px;
+     margin-top: 10px;
+     margin-left: 150px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-weight: 700;
+     background: #FDE58A;
+     padding: 10px 0px;
+     border: 1px solid black;
+     border-radius: 5px;
+     font-size: 14px;
+ }
+
+
+ .btn:hover {
+     background: white;
+ }
+
+ .btn>img {
+     margin-left: 10px;
+     width: 20px;
+ }
+
+ .section-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100vw;
+ 
+ }
+
+ .container {
+     display: flex;
+     flex-wrap:wrap ;
+ }
+ 
+
+ .container>.containerBox {
+     height: 100px;
+ }
+
+ .container>.containerBox:nth-child(odd) {
+     background: #324B96;
+     color: white;
+ }
+
+ .container>.containerBox:nth-child(odd)>.btn {
+     background: #324B96;
+     color: white;
+     border-color: white;
+ }
+
+
+ .container>.containerBox:nth-child(odd)>.btn:hover {
+     background: #ffffff;
+     color: black;
+     border-color: white;
+ }
+
+ .container>.containerBox:nth-child(even)>.btn>img {
+     filter: invert(0);
+ }
+
+ 
+ 

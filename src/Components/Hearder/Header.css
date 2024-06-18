@@ -1,0 +1,10 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    background: #F3F8FE;
+    padding: 7px 25px;
+    height: 40px;
+}
+header>img{
+    width: 140px;
+}

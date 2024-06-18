@@ -1,0 +1,163 @@
+.listBooking {
+    width: 20vw;
+    height: 40vw;
+    background: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+}
+
+.listBookingItem {
+    cursor: pointer;
+    margin-bottom: 30px;
+    color: #5C5D5F;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
+.bookingSection {
+    display: flex;
+    
+}
+
+.bookingdetails {
+    background: #CCEBF5;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+ 
+ 
+.inputBox > span{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+input {
+    outline: none;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+select {
+    border-radius: 10px;
+    outline: none;
+    margin: 10px;
+    padding: 10px 200px 10px 3px;
+    border: none;
+    overflow: hidden;
+}
+select::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar width */
+    background: transparent;  /* Optional: hide scrollbar background */
+}
+label {
+    font-size: 25px;
+    font-weight: 700;
+}
+.bookingInformation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bookingInformation>h1 {
+    margin-bottom: 40px;
+    margin-top: 30px;
+    color: #686868;
+}
+button{
+    width: 100%;
+    border: none;
+    background: #39435B;
+    color: white;
+    font-size: 16px;
+    padding: 15px 50px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin : 40px;
+}
+.bookingdetails{
+    display: flex;
+    flex-direction: column;
+}
+.steps{
+    display: none;
+}
+@media screen and (max-width:1291px) {
+    .listBooking{
+        display: none;
+    }
+    .bookingSection{
+        display: block;
+    }
+    .steps{
+        display: flex;
+        justify-content: center;
+        margin: 20px 0px;
+        font-size: 1.5rem;
+        color: #39435B;
+        font-weight: 700;
+    }
+    
+}
+@media screen and (max-width:720px){
+    input{
+        width: 200px;
+    }
+    select{
+        width: 220px;
+        padding: 10px 100px 10px 3px;
+    }
+    label{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:500px){
+    .inputBox{
+        display: flex;
+        flex-direction: column;
+    }
+    .inputBox>span{
+        display: flex;
+        flex-direction: column;
+    }
+    .booksummary > h2 {
+        display: none;
+    }
+}
+.appointmentSlot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.appointmentSlot > h1{
+    margin-bottom: 50px;
+}
+.appointmentSlot > button{
+    width: 200px;
+}
+.booksummary{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+}
+ .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+ }
+ .booksummary > h2{
+    margin-bottom: 40px;
+ }
+ .margin{
+    margin-left: 18px;
+    margin: 5px 0px 5px 18px;
+    border-radius: 20px;
+ }

@@ -1,0 +1,26 @@
+.footerImage > img{
+    width: 100px;
+    margin: 10px 18px;
+
+}
+.footerImage{
+    background: #F4F9FF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    background: #324B96;
+    width: 100vw;
+    height: 100px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.footer > span{
+    cursor: pointer;
+}
