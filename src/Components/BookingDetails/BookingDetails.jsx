@@ -114,13 +114,13 @@ const BookingDetails = () => {
                         </span>
 
                         <span>
-                            <label htmlFor="captchaInput">Input Captcha:</label>
-                            <input
-                                type="text"
-                                value={captchaInput}
-                                onChange={(e) => setCaptchaInput(e.target.value)}
-                            />
-                        </span>
+                                <label htmlFor="captchaInput">Input Captcha:</label>
+                                <input
+                                    type="text"
+                                    value={captchaInput}
+                                    onChange={(e) => setCaptchaInput(e.target.value)}
+                                />
+                            </span>
                     </div>
                     <Link to='/fitmentLocation'><button onClick={handleValidCaptcha}>Submit</button></Link>
                 </div>

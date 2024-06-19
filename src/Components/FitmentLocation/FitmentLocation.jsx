@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import { SideSection } from "../SideSection/SideSection";
 import { Link } from "react-router-dom";
+import { LoadCanvasTemplate, loadCaptchaEnginge } from "react-simple-captcha";
 
 const FitmentLocation = () => {
     const [captcha, setCaptcha] = useState(Math.floor(1000 + Math.random() * 9000));
@@ -11,6 +12,10 @@ const FitmentLocation = () => {
     const [mobileNumber, setMobileNumber] = useState('');
     const [city, setCity] = useState('');
     const [pincode, setPincode] = useState('');
+
+    useEffect(() => {
+        loadCaptchaEnginge(6);
+    }, []);
 
     const statesOfIndia = [
         "Andhra Pradesh",
@@ -113,9 +118,10 @@ const FitmentLocation = () => {
                                 />
                             </span>
                             <span>
-                                <label htmlFor="captcha">Captcha:</label>
-                                <input type="text" value={captcha} readOnly />
-                            </span>
+                            <label htmlFor="captcha">Captcha:</label>
+                            <span className="margin"><LoadCanvasTemplate /></span>
+                        </span>
+
                             <span>
                                 <label htmlFor="captchaInput">Input Captcha:</label>
                                 <input
