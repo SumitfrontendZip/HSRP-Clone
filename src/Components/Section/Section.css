@@ -68,14 +68,19 @@
      color: white;
  }
 
- .container>.containerBox:nth-child(odd)>.btn {
-     background: #324B96;
+ .container>.containerBox:nth-child(odd)> a> .btn {
+     background: #324B96 ;   
      color: white;
      border-color: white;
  }
 
+ .container>.containerBox:nth-child(even)> a> .btn {
+     color: rgb(0, 0, 0) !important;
+     border-color: black;
+ }
 
- .container>.containerBox:nth-child(odd)>.btn:hover {
+
+ .container>.containerBox:nth-child(even)>.btn:hover {
      background: #ffffff;
      color: black;
      border-color: white;
